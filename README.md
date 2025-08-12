@@ -9,3 +9,4 @@ Validação Inteligente
 ✅ Mensagens de erro claras e amigáveis
 
 ✅ Retorna true/false para controle de fluxo
+
