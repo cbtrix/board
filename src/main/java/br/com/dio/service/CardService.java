@@ -141,5 +141,22 @@ public class CardService {
             throw ex;
         }
     }
+    public boolean criarCard(String titulo, String descricao) {
+    
+    if (titulo == null || titulo.trim().isEmpty()) {
+        System.out.println("❌ Título não pode estar vazio!");
+        return false;
+    }
+    
+    if (titulo.length() > 50) {
+        System.out.println("❌ Título muito longo! Máximo 50 caracteres.");
+        return false;
+    }
+    
+    Card card = new Card(titulo, descricao);
+    cards.add(card);
+    System.out.println("✅ Card criado com sucesso!");
+    return true;
+}
 
 }
